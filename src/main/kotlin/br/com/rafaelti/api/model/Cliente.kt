@@ -18,3 +18,12 @@ data class Cliente (
     @Column(nullable = false, unique = true)
     val email: String = ""
 )
+
+@Entity
+data class Teste (
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+    val id: Long = 0,
+
+    @Column(nullable = false)
+    val nome: String = "",
+)
